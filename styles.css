@@ -1440,7 +1440,7 @@ body {
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     .flowers {
-        transform: translateX(-50%) scale(0.5);
+        transform: translateX(-50%) scale(0.55);
     }
 
     .valentine-message {
@@ -1451,11 +1451,11 @@ body {
 /* Mobile landscape */
 @media (max-width: 767px) and (orientation: landscape) {
     .flowers {
-        transform: translateX(-50%) scale(0.35);
+        transform: translateX(-50%) scale(0.55);
     }
 
     .valentine-message {
-        top: 3%;
+        top: 2%;
     }
 
     .valentine-message h1 {
@@ -1470,7 +1470,7 @@ body {
 /* Mobile Portrait */
 @media (max-width: 767px) and (orientation: portrait) {
     .flowers {
-        transform: translateX(-50%) scale(0.4);
+        transform: translateX(-50%) scale(0.7);
     }
 
     .valentine-message {
@@ -1478,34 +1478,34 @@ body {
     }
 
     .valentine-message h1 {
-        font-size: clamp(1.8rem, 6vw, 3rem);
+        font-size: clamp(2rem, 7vw, 3.5rem);
     }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
     .flowers {
-        transform: translateX(-50%) scale(0.35);
+        transform: translateX(-50%) scale(0.65);
     }
 }
 
 /* Very Small Mobile */
 @media (max-width: 375px) {
     .flowers {
-        transform: translateX(-50%) scale(0.3);
+        transform: translateX(-50%) scale(0.6);
     }
 
     .valentine-message h1 {
-        font-size: clamp(1.5rem, 5vw, 2rem);
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
     }
 
     .valentine-message p {
-        font-size: clamp(0.65rem, 1.5vw, 0.9rem);
+        font-size: clamp(0.75rem, 2vw, 1rem);
     }
 }
 
 @media (max-width: 320px) {
     .flowers {
-        transform: translateX(-50%) scale(0.25);
+        transform: translateX(-50%) scale(0.55);
     }
 }
