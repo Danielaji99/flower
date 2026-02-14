@@ -1448,10 +1448,10 @@ body {
     }
 }
 
-/* Mobile landscape */
+/* Mobile landscape - 50% bigger: 0.55 -> 0.82 */
 @media (max-width: 767px) and (orientation: landscape) {
     .flowers {
-        transform: translateX(-50%) scale(0.55);
+        transform: translateX(-50%) scale(0.82);
     }
 
     .valentine-message {
@@ -1459,53 +1459,70 @@ body {
     }
 
     .valentine-message h1 {
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        font-size: clamp(1.8rem, 5vw, 3rem);
     }
 
     .valentine-message p {
-        font-size: clamp(0.7rem, 1.8vw, 1rem);
+        font-size: clamp(0.85rem, 2vw, 1.2rem);
     }
 }
 
-/* Mobile Portrait */
+/* Mobile Portrait - 50% bigger: 0.7 -> 1.05 */
 @media (max-width: 767px) and (orientation: portrait) {
     .flowers {
-        transform: translateX(-50%) scale(0.7);
+        transform: translateX(-50%) scale(1.05);
     }
 
     .valentine-message {
-        top: 8%;
+        top: 5%;
     }
 
     .valentine-message h1 {
-        font-size: clamp(2rem, 7vw, 3.5rem);
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-    .flowers {
-        transform: translateX(-50%) scale(0.65);
-    }
-}
-
-/* Very Small Mobile */
-@media (max-width: 375px) {
-    .flowers {
-        transform: translateX(-50%) scale(0.6);
-    }
-
-    .valentine-message h1 {
-        font-size: clamp(1.8rem, 6vw, 2.5rem);
+        font-size: clamp(2.2rem, 8vw, 4rem);
     }
 
     .valentine-message p {
-        font-size: clamp(0.75rem, 2vw, 1rem);
+        font-size: clamp(0.9rem, 2.5vw, 1.3rem);
     }
 }
 
+/* Small Mobile - 50% bigger: 0.65 -> 0.98 */
+@media (max-width: 480px) {
+    .flowers {
+        transform: translateX(-50%) scale(0.98);
+    }
+
+    .valentine-message {
+        top: 4%;
+    }
+}
+
+/* Very Small Mobile - 50% bigger: 0.6 -> 0.9 */
+@media (max-width: 375px) {
+    .flowers {
+        transform: translateX(-50%) scale(0.9);
+    }
+
+    .valentine-message {
+        top: 3%;
+    }
+
+    .valentine-message h1 {
+        font-size: clamp(2rem, 7vw, 3rem);
+    }
+
+    .valentine-message p {
+        font-size: clamp(0.85rem, 2.2vw, 1.1rem);
+    }
+}
+
+/* Tiny Mobile - 50% bigger: 0.55 -> 0.82 */
 @media (max-width: 320px) {
     .flowers {
-        transform: translateX(-50%) scale(0.55);
+        transform: translateX(-50%) scale(0.82);
+    }
+
+    .valentine-message h1 {
+        font-size: clamp(1.8rem, 6.5vw, 2.5rem);
     }
 }
